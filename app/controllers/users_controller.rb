@@ -17,6 +17,16 @@ class UsersController < ApplicationController
            render :edit
       end
     end
+    
+    def quit
+    end
+
+    def out
+      @user.update(is_deleted: true)
+      reset_session
+      redirect_to root_path
+    end
+
 
   private
 
