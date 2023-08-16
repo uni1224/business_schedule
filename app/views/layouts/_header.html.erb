@@ -9,13 +9,19 @@
             <li class="nav-item">
               <%= link_to mypage_path ,class: "nav-link", style: "color: #f5f5f5" do %>
                 <i class="fa-solid fa-user"></i>
-                マイページ
+                Mypage
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to userspage_path ,class: "nav-link", style: "color: #f5f5f5" do %>
+                <i class="fa-solid fa-user-check"></i>
+                Users
               <% end %>
             </li>
             <li class="nav-item">
               <%= link_to destroy_user_session_path, method: :delete, class: "nav-link", style: "color: #f5f5f5" do %>
                 <i class="fa-solid fa-right-from-bracket"></i>
-                ログアウト
+                Log out
               <% end %>
             </li>
           <% else %>

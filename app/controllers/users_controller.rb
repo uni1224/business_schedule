@@ -5,6 +5,10 @@ class UsersController < ApplicationController
     def show
     end
 
+    def index
+      @users= User.all
+    end
+
     def edit
     end
 
@@ -17,7 +21,7 @@ class UsersController < ApplicationController
            render :edit
       end
     end
-    
+
     def quit
     end
 
