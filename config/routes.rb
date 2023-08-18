@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'users/quit' => 'users#quit', as: 'confirm_quit'
   put 'users/information' => 'users#update'
   patch 'users/out' => 'users#out', as: 'out_user'
+  resources :events
 end

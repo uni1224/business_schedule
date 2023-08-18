@@ -45,8 +45,7 @@ ActiveRecord::Schema.define(version: 2023_08_12_061033) do
     t.integer "category_id"
     t.string "title"
     t.string "body"
-    t.date "day"
-    t.time "time"
+    t.datetime "start_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

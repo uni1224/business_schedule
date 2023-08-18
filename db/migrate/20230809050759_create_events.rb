@@ -5,9 +5,7 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.integer :category_id
       t.string :title
       t.string :body
-      t.date :day
-      t.time :time
-
+      t.datetime :start_time
       t.timestamps
     end
   end
