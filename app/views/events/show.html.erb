@@ -12,7 +12,7 @@
 
 <p>
   <strong>日時</strong>
-  <%= @event.start_time.strftime("%m-%d") %>
+  <%= @event.start_time.strftime("%Y-%m-%d %H:%M") %>
 </p>
 
 <%= link_to '編集', edit_event_path(@event) %>

@@ -3,7 +3,7 @@
     <div class="col-12 text-center title">
 
 <div class="toppage">
-<h1 class="top">カレンダー</h1>
+<h1 class="top">Schedule <i class="fa-regular fa-calendar-days"></i></h1>
 <br>
 
 <div class="row">
@@ -21,7 +21,7 @@
     <% @events.each do |event| %>
       <tr>
         <td><%= link_to event.title , event %></td>
-        <td><%= event.start_time.strftime("%m-%d") if event.start_time %></td>
+        <td><%= event.start_time.strftime("%Y-%m-%d %H:%M") if event.start_time %></td>
       </tr>
     <% end %>
   </tbody>
