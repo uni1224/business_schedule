@@ -3,6 +3,7 @@ class UsersController < ApplicationController
     before_action :set_current_user
 
     def show
+      @events= Event.all
     end
 
     def index
