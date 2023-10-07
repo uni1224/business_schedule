@@ -3,7 +3,7 @@ class EventsController < ApplicationController
     @events = Event.all
     @event = Event.new
   end
-  
+
   def new
     @event = Event.new
   end
@@ -20,7 +20,7 @@ class EventsController < ApplicationController
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
-    redirect_to events_path, notice:"削除しました"
+    redirect_to events_path, notice: "削除しました"
   end
 
   def edit
@@ -32,14 +32,12 @@ class EventsController < ApplicationController
     if @event.update(event_parameter)
       redirect_to events_path, notice: "編集しました"
     else
-      render 'edit'
+      render "edit"
     end
   end
 
   private
-
-  def event_parameter
-    params.require(:event).permit(:title, :body, :start_time)
-  end
-
+    def event_parameter
+      params.require(:event).permit(:title, :body, :start_time)
+    end
 end

@@ -6,6 +6,7 @@
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
           <script src="https://kit.fontawesome.com/561b0f0e8b.js" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,5 +16,6 @@
   </header>
   <body>
     <%= yield %>
+    <script src="/javascript/script.js"></script>
   </body>
 </html>
